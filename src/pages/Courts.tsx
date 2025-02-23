@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import CourtCard from "@/components/CourtCard";
 
@@ -6,11 +5,11 @@ import CourtCard from "@/components/CourtCard";
 const courts = [
   {
     id: "1",
-    name: "Elite Futsal Arena",
+    name: "Nayapati Futsal",
     imageUrl: "https://th.bing.com/th/id/OIP.cbb01qsDEvAG9fKGr1iYvAHaFj?w=223&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-    price: 60,
+    price: 1000,
     rating: 4.8,
-    location: "Downtown Sports Complex",
+    location: "Nayapati-2,Kathmandu",
     description: "Premier indoor futsal facility featuring FIFA-approved flooring and professional lighting.",
     amenities: [
       "Professional-grade synthetic turf",
@@ -25,11 +24,11 @@ const courts = [
   },
   {
     id: "2",
-    name: "Pro Futsal Center",
+    name: "Gokarna Futsal",
     imageUrl: "https://th.bing.com/th/id/OIF.GUc9dLFSQaWeGJcvfOXDzg?w=245&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-    price: 55,
+    price: 1200,
     rating: 4.6,
-    location: "Westside Recreation Center",
+    location: "Gokarna-3,Kathamndu",
     description: "Modern futsal facility with state-of-the-art amenities and convenient location.",
     amenities: [
       "High-performance court surface",
@@ -44,11 +43,11 @@ const courts = [
   },
   {
     id: "3",
-    name: "Urban Futsal Hub",
+    name: "Futsal Hub",
     imageUrl: "https://th.bing.com/th/id/OIP.4o7UrZywxae7KMK-doeL5gHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-    price: 50,
+    price: 1500,
     rating: 4.7,
-    location: "Eastside Sports Park",
+    location: "Jorpati-4,Kathmandu",
     description: "Contemporary futsal venue perfect for competitive matches and training sessions.",
     amenities: [
       "Premium artificial turf",
@@ -65,20 +64,29 @@ const courts = [
 
 const Courts = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 via-pink-50 to-red-50">
       <Navbar />
       <div className="container mx-auto pt-24 px-4">
+        {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold mb-4">Our Premium Courts</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
+            Our Premium Courts
+          </h1>
+          <p className="text-gray-700 max-w-2xl mx-auto">
             Discover our selection of professional futsal courts, each equipped with
             top-quality facilities and amenities for the perfect game.
           </p>
         </div>
         
+        {/* Court Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courts.map((court) => (
-            <CourtCard key={court.id} {...court} />
+            <div 
+              key={court.id} 
+              className="hover:scale-105 transition-transform duration-300 ease-in-out"
+            >
+              <CourtCard {...court} />
+            </div>
           ))}
         </div>
       </div>

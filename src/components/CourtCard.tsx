@@ -20,7 +20,7 @@ const CourtCard = ({ id, name, imageUrl, price, rating, location }: CourtCardPro
           className="w-full h-full object-cover transition-transform hover:scale-110 duration-700"
         />
         <div className="absolute top-4 right-4 px-3 py-1 glass rounded-full text-sm font-medium">
-          ${price}/hr
+          Rs {price}/hr
         </div>
       </div>
       <div className="p-4">

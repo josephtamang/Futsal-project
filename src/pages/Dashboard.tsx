@@ -22,14 +22,14 @@ interface Booking {
 const mockBookings: Booking[] = [
   {
     id: "1",
-    courtName: "Elite Futsal Arena",
+    courtName: "Nayapati Futsal",
     date: "2024-03-20",
     time: "14:00",
     status: "upcoming",
   },
   {
     id: "2",
-    courtName: "Urban Futsal Hub",
+    courtName: "Gokarna Futsal",
     date: "2024-03-15",
     time: "16:00",
     status: "completed",
@@ -76,7 +76,7 @@ const Dashboard = () => {
                 <CardDescription>Most booked venue</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-xl font-semibold">Elite Futsal Arena</p>
+                <p className="text-xl font-semibold">Nayapati Futsal</p>
               </CardContent>
             </Card>
           </div>

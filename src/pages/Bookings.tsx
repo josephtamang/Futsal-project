@@ -159,9 +159,9 @@ const Bookings = () => {
                       required
                     >
                       <option value="">Select a court</option>
-                      <option value="1">Elite Futsal Arena</option>
-                      <option value="2">Pro Futsal Center</option>
-                      <option value="3">Urban Futsal Hub</option>
+                      <option value="1">Nayapati Futsal</option>
+                      <option value="2">Gokarna Futsal</option>
+                      <option value="3">Futsal Hub</option>
                     </select>
                   </div>
                 </div>

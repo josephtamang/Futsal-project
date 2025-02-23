@@ -7,11 +7,11 @@ import { Calendar, Clock, Users, Ruler } from "lucide-react";
 const courts = [
   {
     id: "1",
-    name: "Elite Futsal Arena",
+    name: "Nayapati Futsal",
     imageUrl: "https://th.bing.com/th/id/OIP.cbb01qsDEvAG9fKGr1iYvAHaFj?w=223&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-    price: 60,
+    price: 1000,
     rating: 4.8,
-    location: "Downtown Sports Complex",
+    location: "Nayapati-2,Kathmandu",
     description: "Premier indoor futsal facility featuring FIFA-approved flooring and professional lighting.",
     amenities: [
       "Professional-grade synthetic turf",
@@ -26,11 +26,11 @@ const courts = [
   },
   {
     id: "2",
-    name: "Pro Futsal Center",
+    name: "Gokarna Futsal",
     imageUrl: "https://th.bing.com/th/id/OIF.GUc9dLFSQaWeGJcvfOXDzg?w=245&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-    price: 55,
+    price: 1200,
     rating: 4.6,
-    location: "Westside Recreation Center",
+    location: "Gokarna-3,Kathamndu",
     description: "Modern futsal facility with state-of-the-art amenities and convenient location.",
     amenities: [
       "High-performance court surface",
@@ -45,11 +45,11 @@ const courts = [
   },
   {
     id: "3",
-    name: "Urban Futsal Hub",
+    name: "Futsal hub",
     imageUrl: "https://th.bing.com/th/id/OIP.4o7UrZywxae7KMK-doeL5gHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-    price: 50,
+    price: 1500,
     rating: 4.7,
-    location: "Eastside Sports Park",
+    location: "Jorpati-4,Kathmandu",
     description: "Contemporary futsal venue perfect for competitive matches and training sessions.",
     amenities: [
       "Premium artificial turf",
@@ -91,7 +91,7 @@ const CourtDetails = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute top-4 right-4 px-4 py-2 glass rounded-full text-lg font-medium">
-              ${court.price}/hr
+              Rs {court.price}/hr
             </div>
           </div>
 
