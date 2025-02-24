@@ -1,16 +1,6 @@
-
 import { Link } from "react-router-dom";
 
-interface CourtCardProps {
-  id: string;
-  name: string;
-  imageUrl: string;
-  price: number;
-  rating: number;
-  location: string;
-}
-
-const CourtCard = ({ id, name, imageUrl, price, rating, location }: CourtCardProps) => {
+const CourtCard = ({ id, name, imageUrl, price, rating, location }) => {
   return (
     <div className="glass rounded-lg overflow-hidden transition-transform hover:scale-[1.02]">
       <div className="aspect-video relative overflow-hidden">

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -8,7 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
 
 const Bookings = () => {
-  const [date, setDate] = useState<Date | undefined>(undefined);
+  const [date, setDate] = useState(undefined);
   const [time, setTime] = useState("");
   const [duration, setDuration] = useState("1");
   const [courtId, setCourtId] = useState("");
@@ -22,7 +21,7 @@ const Bookings = () => {
     "19:00", "20:00", "21:00", "22:00"
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!date) {

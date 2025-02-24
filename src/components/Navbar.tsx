@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X, Calendar, User } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,10 +7,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-50 px-4 py-3 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-opacity-30 backdrop-blur-lg shadow-lg">
-  <div className="container mx-auto flex justify-between items-center">
-    <Link to="/" className="text-xl font-semibold text-white">
-      
-        FutBook 
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-xl font-semibold text-white">
+          FutBook 
         </Link>
 
         {/* Desktop Navigation */}
